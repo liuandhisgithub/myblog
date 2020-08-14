@@ -5,7 +5,7 @@ import java.util.Date;
 public class Blog {
     private int id;
     private String name;
-    private String authorId;
+    private int authorId;
     private String content;
     private Date createTime;
     private String keyWord;
@@ -18,16 +18,17 @@ public class Blog {
         this.name = name;
     }
 
-    public String getAuthorId() {
-        return authorId;
-    }
-
-    public void setAuthorId(String authorId) {
-        this.authorId = authorId;
-    }
 
     public String getContent() {
         return content;
+    }
+
+    public int getAuthorId() {
+        return authorId;
+    }
+
+    public void setAuthorId(int authorId) {
+        this.authorId = authorId;
     }
 
     public void setContent(String content) {

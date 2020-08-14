@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BlogDao {
     void insertOneBlog(Blog blog);
+
+    Blog findAll();
 }

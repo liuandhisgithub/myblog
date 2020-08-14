@@ -11,18 +11,18 @@ import javax.xml.ws.RequestWrapper;
 import java.util.Date;
 
 @Controller
-@RequestMapping("blog")
 public class BolgAction {
     @Autowired
     BlogServiceImpl blogServiceImpl;
     @RequestMapping("insert")
-    public void insert(){
+    public String insert(){
         Blog blog = new Blog();
-        blog.setId(1);
+        blog.setId(2);
         blog.setName("text");
-        blog.setAuthorId("me");
+        blog.setAuthorId(123);
         blog.setContent("helloWorld,helloMyBlog");
         blog.setCreateTime(new Date());
         blogServiceImpl.insertOneBlog(blog);
+        return "hello";
     }
 }
