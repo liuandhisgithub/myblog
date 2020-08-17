@@ -2,18 +2,22 @@ package com.liu.myblog.action;
 
 import com.liu.myblog.entity.Blog;
 import com.liu.myblog.service.BlogService;
-import com.liu.myblog.service.BlogServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.xml.ws.RequestWrapper;
 import java.util.Date;
 
-@Controller
+@Controller(BolgAction.CODE)
+@RequestMapping("blog")
 public class BolgAction {
+    public static final String CODE = "com.liu.myblog.action.BolgAction";
+
     @Autowired
-    BlogServiceImpl blogServiceImpl;
+    @Qualifier(BlogService.CODE)
+    BlogService blogService;
+
     @RequestMapping("insert")
     public String insert(){
         Blog blog = new Blog();
@@ -22,7 +26,7 @@ public class BolgAction {
         blog.setAuthorId(123);
         blog.setContent("helloWorld,helloMyBlog");
         blog.setCreateTime(new Date());
-        blogServiceImpl.insertOneBlog(blog);
+        blogService.insertOneBlog(blog);
         return "hello";
     }
 }
