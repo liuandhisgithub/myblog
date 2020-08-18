@@ -19,7 +19,7 @@ public class UserAction {
     @Qualifier(UserService.CODE)
     UserService userService;
 
-    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/save",method = RequestMethod.POST)
     public ModelAndView save(User user){
         ModelAndView modelAndView = new ModelAndView("success");
         userService.save(user);

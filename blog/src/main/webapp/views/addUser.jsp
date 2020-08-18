@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="../user/add" method="post">
+    <form action="../user/save" method="post">
         <input type="text" name="id">
         <input type="password" name="password">
         <input type="submit" value="submit">

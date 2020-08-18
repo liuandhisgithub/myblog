@@ -11,6 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-<a href = "views/addUser.jsp">添加用户链接</a>
+<a href = "views/addUser.jsp">添加用户链接</a> <br/>
+<hr/>
+<a href="views/addBlog.jsp">添加博客链接</a><br/>
+<hr/>
+<a href="blog/find">查看所有blog</a>
 </body>
 </html>
