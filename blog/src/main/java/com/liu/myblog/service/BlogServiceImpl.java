@@ -24,4 +24,12 @@ public class BlogServiceImpl implements BlogService{
     public List<Blog> findAll(){
         return blogDao.findAll();
     }
+
+    public Blog findOne(int id){
+        return blogDao.findById(id);
+    }
+
+    public void deleteOne(int id){
+        blogDao.deleteById(id);
+    }
 }

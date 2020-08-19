@@ -8,4 +8,10 @@
     <insert id="insertOneBlog" parameterType="com.liu.myblog.entity.Blog">
         insert into blog(id,name,author_id,content,create_time,key_word) value (#{id},#{name},#{authorId},#{content},#{createTime},#{keyWord})
     </insert>
+    <select id="findById" resultType="com.liu.myblog.entity.Blog" parameterType="int" >
+        select * from blog where id = #{id}
+    </select>
+    <delete id="deleteById" parameterType="int">
+        delete from blog where id = #{id}
+    </delete>
 </mapper>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.liu.myblog.dao.CommentDao">
+    <select id="findByBlogId" resultType = "com.liu.myblog.entity.Comment" parameterType = "int">
+        select * from comment where blog_id = #{blogId}
+    </select>
+
+    <insert id="saveOneComment" parameterType = "com.liu.myblog.entity.Comment">
+        insert into comment(id,blog_id,author_id,create_time,content) value (#{id},#{blogId},#{authorId},#{createTime},#{content})
+    </insert>
+</mapper>

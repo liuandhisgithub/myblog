@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository(UserDao.CODE)
 public interface UserDao {
-    static final String CODE = "com.liu.myblog.dao.UserDao";
+    String CODE = "com.liu.myblog.dao.UserDao";
     void insertAUser(User user);
 }

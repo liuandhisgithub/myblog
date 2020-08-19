@@ -13,20 +13,14 @@
 </head>
 <body>
     <table>
-        <tr>
-            <td>id</td>
-            <td>name</td>
-            <td>authorId</td>
-            <td>createTime</td>
-            <td>content</td>
-        </tr>
         <c:forEach var="blog" items="${requestScope.blogList}">
                 <tr>
-                    <td>${blog.id}</td>
+                    <td><a href="../blog/find/one?id=${blog.id}">${blog.id}</a></td>
                     <td>${blog.name}</td>
                     <td>${blog.authorId}</td>
                     <td>${blog.createTime}</td>
                     <td>${blog.content}</td>
+                    <td><a href="../blog/delete/one/?id=${blog.id}">删除</a></td>
                 </tr>
         </c:forEach>
     </table>
