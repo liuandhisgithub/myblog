@@ -33,6 +33,43 @@
           <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Maven: org.glassfish.web:jstl-impl:1.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.6" />
+          <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.29.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.29.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-common:4.1.29.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.29.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.29.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport-native-epoll:4.1.29.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport-native-unix-common:4.1.29.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.29.Final" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.1" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-math3:3.6.1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.10" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.12" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpmime:4.5.10" />
+          <element id="library" level="project" name="Maven: org.apache.solr:solr-solrj:8.5.2" />
+          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper-jute:3.5.5" />
+          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.5.5" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.http2:http2-client:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.http2:http2-common:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.http2:http2-hpack:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.http2:http2-http-client-transport:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-alpn-client:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-alpn-java-client:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-client:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-http:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-io:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-util:9.4.24.v20191120" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.26" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:2.3.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-solr:4.2.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.4.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.24" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.24" />
         </element>
       </element>
     </root>

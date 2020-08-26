@@ -15,6 +15,10 @@
 <hr/>
 <a href="views/addBlog.jsp">添加博客链接</a><br/>
 <hr/>
-<a href="blog/find">查看所有blog</a>
+<a href="blog/find">查看所有blog</a><br/>
+<hr/>
+<a href="author/solr/into">solr服务器初始化</a>
+<hr/>
+<a href = "views/addAuthor.jsp">添加作者链接</a> <br/>
 </body>
 </html>
