@@ -23,9 +23,10 @@
     <mvc:annotation-driven></mvc:annotation-driven>
     <mvc:default-servlet-handler/>
     <!-- solr配置信息 -->
-    <solr:solr-client id="solrClient" url="https://locahost:8080/solr" />
+    <solr:repositories base-package="com.liu.myblog.solrDao" />
+    <solr:solr-client id="solrClient" url="http://localhost:8080/solr" />
     <bean id="solrTemplate" class="org.springframework.data.solr.core.SolrTemplate">
-        <constructor-arg ref="solrClient" ></constructor-arg>
+        <constructor-arg ref="solrClient"></constructor-arg>
     </bean>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

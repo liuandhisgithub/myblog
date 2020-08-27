@@ -4,6 +4,7 @@ import com.liu.myblog.dao.AuthorDao;
 import com.liu.myblog.entity.Author;
 import com.liu.myblog.entity.SolrAuthor;
 import com.liu.myblog.solrDao.AuthorDocumentDao;
+import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.solr.core.SolrTemplate;
@@ -33,8 +34,9 @@ public class AuthorSolrServiceImpl implements AuthorSolrService {
             solrAuthor.setName(author.getName());
             solrAuthor.seteMail(author.geteMail());
             solrAuthor.setPhone(author.getPhone());
-//            authorDocumentDao.save(solrAuthor);
+            authorDocumentDao.save(solrAuthor);
         }
     }
+
 
 }
