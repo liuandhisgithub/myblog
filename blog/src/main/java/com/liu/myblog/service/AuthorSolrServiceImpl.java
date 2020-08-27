@@ -8,6 +8,8 @@ import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.solr.core.SolrTemplate;
+import org.springframework.data.solr.core.query.*;
+import org.springframework.data.solr.core.query.result.FacetPage;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,10 +34,19 @@ public class AuthorSolrServiceImpl implements AuthorSolrService {
             SolrAuthor solrAuthor = new SolrAuthor();
             solrAuthor.setId(author.getId());
             solrAuthor.setName(author.getName());
-            solrAuthor.seteMail(author.geteMail());
+            solrAuthor.setEmail(author.getEmail());
             solrAuthor.setPhone(author.getPhone());
             authorDocumentDao.save(solrAuthor);
         }
+    }
+
+    public List<SolrAuthor> search(String all){
+        FacetQuery query = new SimpleFacetQuery();
+        Criteria criteria = new Criteria("all").in(all);
+        query.addCriteria(criteria);
+        FacetPage<SolrAuthor> solrResource = solrTemplate.queryForFacetPage(SolrAuthor.CODE,query,SolrAuthor.class);
+        List<SolrAuthor> resource = solrResource.getContent();
+        return resource;
     }
 
 

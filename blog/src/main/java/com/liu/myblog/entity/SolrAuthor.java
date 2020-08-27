@@ -1,6 +1,7 @@
 package com.liu.myblog.entity;
 
 import org.apache.solr.client.solrj.beans.Field;
+import org.springframework.data.solr.core.mapping.Score;
 import org.springframework.data.solr.core.mapping.SolrDocument;
 
 import java.util.List;
@@ -12,12 +13,14 @@ public class SolrAuthor {
     private int id;
     @Field("name")
     private String name;
-    @Field("eMail")
-    private String eMail;
+    @Field("email")
+    private String email;
     @Field("phone")
     private String phone;
     @Field("all")
     private List<String> all;
+    @Score
+    private Float score;
 
     public int getId() {
         return id;
@@ -35,12 +38,12 @@ public class SolrAuthor {
         this.name = name;
     }
 
-    public String geteMail() {
-        return eMail;
+    public String getEmail() {
+        return email;
     }
 
-    public void seteMail(String eMail) {
-        this.eMail = eMail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPhone() {
@@ -49,5 +52,21 @@ public class SolrAuthor {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public List<String> getAll() {
+        return all;
+    }
+
+    public void setAll(List<String> all) {
+        this.all = all;
+    }
+
+    public Float getScore() {
+        return score;
+    }
+
+    public void setScore(Float score) {
+        this.score = score;
     }
 }

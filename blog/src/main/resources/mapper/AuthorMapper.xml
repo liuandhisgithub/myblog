@@ -2,10 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.liu.myblog.dao.AuthorDao">
-    <select id="findAll" resultType="com.liu.myblog.entity.Author">
+    <select id="findAll" resultMap="author">
         select * from author
     </select>
     <insert id="insertOneAuthor" parameterType="com.liu.myblog.entity.Author">
-        insert into author(id,name,e_mail,phone) value (#{id},#{name},#{eMail},#{phone})
+        insert into author(id,name,e_mail,phone) value (#{id},#{name},#{email},#{phone})
     </insert>
+    <resultMap id="author" type="com.liu.myblog.entity.Author">
+        <result property="email" column="e_mail"/>
+    </resultMap>
 </mapper>

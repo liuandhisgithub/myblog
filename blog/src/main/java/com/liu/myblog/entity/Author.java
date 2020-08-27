@@ -3,7 +3,7 @@ package com.liu.myblog.entity;
 public class Author {
     private int id;
     private String name;
-    private String eMail;
+    private String email;
     private String phone;
 
     public int getId() {
@@ -22,12 +22,12 @@ public class Author {
         this.name = name;
     }
 
-    public String geteMail() {
-        return eMail;
+    public String getEmail() {
+        return email;
     }
 
-    public void seteMail(String eMail) {
-        this.eMail = eMail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPhone() {

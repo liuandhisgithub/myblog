@@ -19,6 +19,8 @@
 <hr/>
 <a href="author/solr/into">solr服务器初始化</a>
 <hr/>
-<a href = "views/addAuthor.jsp">添加作者链接</a> <br/>
+<a href="views/addAuthor.jsp">添加作者链接</a> <br/>
+<hr/>
+<a href="views/search.jsp">搜索</a><br/>
 </body>
 </html>
