@@ -9,4 +9,6 @@ import java.util.List;
 @Repository(AuthorDocumentDao.CODE)
 public interface AuthorDocumentDao extends SolrCrudRepository<SolrAuthor, String> {
     String CODE = "com.liu.myblog.solrDao.AuthorDocumnetDao";
+
+    List<SolrAuthor> findByName(String name);
 }

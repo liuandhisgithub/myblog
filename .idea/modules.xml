@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/blog/blog.iml" filepath="$PROJECT_DIR$/blog/blog.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/myblog.iml" filepath="$PROJECT_DIR$/.idea/myblog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/solrTest/solrTest.iml" filepath="$PROJECT_DIR$/solrTest/solrTest.iml" />
     </modules>
   </component>
 </project>
